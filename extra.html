@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom Challenge</title>
+  <link rel="stylesheet" href="extra.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <h1>
+    Welcome to the DOM Challenge
+  </h1>
+  
+  <!-- <button id='minus' > ➖ </button> -->
+  <!-- <button id='plus' > ➕ </button> -->
+  <!-- <button id='heart' > ❤️ </button> -->
+  <div id="activity-buttons">
+    <div id="counter">
+      <span id="days">00</span>
+      <span id="colon">:</span>
+      <span id="hours">00</span>
+      <span id="colon">:</span>
+      <span id="minutes">00</span>
+      <span id="colon">:</span>
+      <span id="seconds">00</span>
+      <span class ="colon ms-colon">:</span>
+      <span class="microseconds">00</span>
+    </div>
+    <!-- minus button -->
+    <div id="minus">
+      <div id="minus-background">
+        <div id="minus-icon"> ➖ </div>
+      </div>
+    </div>
+    <!-- plus button -->
+    <div id="plus">
+      <div id="plus-background">
+        <div id="plus-icon"> ➕ </div>
+      </div>
+    </div>
+    <!-- heart icon  -->
+    <div id="heart">
+      <div id="heart-background">
+        <div id="heart-icon"></div>
+      </div>
+      <!-- number of likes -->
+      <div id="likes-number">116</div>
+    </div>
+    <!-- pause button -->
+    <div id="buttons">
+      <button id="start-pause" class="button">Start</button>
+      <button id="stop" class="button">Pause</button>
+      <button id="reset" class="button">Reset</button>
+    </div>
+  </div>
+    
+  <!-- <ul class='likes'></ul> -->
+
+  <div id="comments">
+    <h3>Comments</h3>
+    
+
+    <h3 class="leave-a-comment">Leave a comment</h3>
+    
+
+    <form id="comment-form" action="">
+      <input type='text' name="comment" id="comment-input" cols="30" rows="10">
+      </br>
+      <button id='submit'>Submit</button>
+    </form>
+    <div id='list' class='comments'></div>
+
+  </div>
+
+  <!-- <script src="js/index.min.js"></script> -->
+  <script src="js/extra.js"></script>
+</body>
+</html>
+

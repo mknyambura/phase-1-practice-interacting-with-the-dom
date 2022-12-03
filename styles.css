@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+#activity-buttons #counter {
+    /* background-color: black; */
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09);
+}
+#activity-buttons #counter span {
+    color: rgb(92, 92, 92);
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin: 2px;
+    padding: 2px;
+}
+#activity-buttons #counter #colon {
+    width: 10px;
+}
+#activity-buttons #counter span.ms-colon,
+#activity-buttons #counter span.microseconds {
+    color: #d6085e;
+}
+#activity-buttons{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#activity-buttons #heart {
+    display: flex;
+}
+#activity-buttons #heart #heart-icon.liked {
+    animation: like 0.7s steps(28) forwards;
+}
+@keyframes like {
+    100% {
+        background-position: right;
+    }
+}
+#activity-buttons #heart #likes-number {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    color: #888;
+    font-weight: 900;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+#activity-buttons #heart-background #heart-icon {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background: url("images/heart.png");
+    background-position: left;
+    cursor: pointer;
+}
+#activity-buttons #heart-background {
+    background: rgba(255, 192, 200, 0);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s ease;
+}
+#activity-buttons #heart-background:hover {
+    background: rgba(255, 192, 200, 0.7);
+}
+#activity-buttons #minus-background,
+#activity-buttons #plus-background {
+    padding: 0 10px;
+    margin: 0 2px;
+    background: #fff;
+    color: #333;
+    border-radius: 4px;
+    transition: 0.6s ease;
+}
+#activity-buttons #minus-background:hover {
+    background: #000;
+    color: #fff;
+}
+#activity-buttons #plus-background:hover {
+    background: #000;
+    color: #fff;
+}
+#activity-buttons #plus-icon,
+#activity-buttons #minus-icons {
+    border: none;
+    border-color: none;
+}
+#activity-buttons button {
+    border: none;
+}
+#activity-buttons .button {
+    padding: 5px 15px;
+    text-align: center;
+    margin: 0 5px;
+    outline: none;
+    color: #d6085e;
+    background: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: 0.6s ease;
+}
+#activity-buttons .button:hover {
+    color: #fff;
+    background: #d6085e;
+}
+#comments h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+h3.leave-a-comment{
+    font-size: 16px;
+    padding: 10px;
+}
+#likes-number{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.button .active,
+.button .notActive {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
